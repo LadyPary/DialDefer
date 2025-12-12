@@ -3,7 +3,7 @@ from turtledemo.penrose import start
 import ollama
 import json
 
-with open("../ANLP_codeWork/data/AIODataCleaned.json", "r") as file:
+with open("../data/AIODataCleaned.json", "r") as file:
     data = json.load(file)
 
 # model_name = "qwen3:8b"

@@ -4,7 +4,7 @@ import ollama
 # then do all this
 # use
 # 1) Load your pooled seed examples (used as in-context examples)
-with open("../ANLP_codeWork/data/pooledData.json", "r") as f:
+with open("../data/pooledData.json", "r") as f:
     seeds = json.load(f)
 
 def format_conversation_turns(turns):
@@ -98,7 +98,7 @@ def parse_conversation(text):
 
 def main():
     # 2) Load the 100 topic/background items you saved above
-    with open("../ANLP_codeWork/data/AIODataCleaned.json", "r") as f:
+    with open("../data/AIODataCleaned.json", "r") as f:
         topic_background_items = json.load(f)
 
     output = []
@@ -118,7 +118,7 @@ def main():
         output.append(out_obj)
 
     # 3) Save final synthetic dataset
-    with open("../ANLP_codeWork/data/100SynthesizedData.json", "w") as f:
+    with open("../data/100SynthesizedData.json", "w") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
     print("Saved 100SynthesizedData.json with", len(output), "items.")
