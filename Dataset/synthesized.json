@@ -1,0 +1,836 @@
+[
+{
+"ID": "synth_001",
+  "category": "manipulation and control",
+"transcription": {
+  "messages": [
+    {
+      "speaker": "Speaker A",
+      "text": "Hey, why didn’t you answer my texts last night?"
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I was on a call with my sister. It went on longer than I expected."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "You know I don’t like when you talk to other people that late. It makes me feel like I’m not your priority."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "She was going through something serious, I couldn’t just hang up."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "If I’m important to you, you’d tell her you have someone waiting. You’re supposed to put me first."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I do put you first most of the time. This was just one night."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "One night becomes many. Remember last week when you stayed late at work? Same thing. You keep choosing others over me."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I stayed late because my manager asked me to. I need my job."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "If you really cared, you’d push back. But fine, if I’m not that important, maybe I should stop trying so hard."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "That’s not what I said. I’m just trying to balance things."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Balancing shouldn’t mean I come last. From now on I want you to check with me before you make plans with anyone else, okay?"
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "That feels a bit intense… but I guess I can try."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "It’s not intense. It’s what people do when they actually care about their partner’s feelings."
+    }
+  ]
+}
+},
+
+
+
+{
+"ID": "synth_002",
+  "category": "manipulation and control",
+"transcription": {
+  "messages": [
+    {
+      "speaker": "Speaker A",
+      "text": "You didn’t send me your location when you went out with your coworkers today."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "It was just lunch at the cafe across the street. I didn’t think it was a big deal."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "We talked about this. I need to know where you are. It’s for your safety."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I understand safety, but I checked in before I left. Isn’t that enough?"
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "No, because you still chose not to do the one simple thing I asked. It’s like you’re testing how far you can push me."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I’m not trying to push you. I just wanted to enjoy lunch without constantly updating my phone."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "If you cared about my peace of mind, you’d send the location. It takes two seconds. Why is that so hard for you?"
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I don’t want to feel monitored all the time. It makes me uncomfortable."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "So your comfort is more important than my anxiety? Nice to know. I guess I’ll just sit here worried sick while you do whatever you want."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "That’s not fair. I’m trying to be considerate."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Then prove it. From now on, share your location anytime you leave the house, and call me when you arrive and when you leave. If you can’t do that, I don’t see how this can work."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "Okay… I’ll do it."
+    }
+  ]
+}
+},
+{
+"ID": "synth_003",
+  "category": "manipulation and control",
+"transcription": {
+  "messages": [
+    {
+      "speaker": "Speaker A",
+      "text": "Why did you wear that outfit to the party? You know it makes me uncomfortable."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I like that dress. I wore it because it makes me feel confident."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Confident? It just makes people stare. I saw the way they were looking at you."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I can’t control how others look. I just wanted to feel good about myself."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "If you respected me, you wouldn’t wear things that invite that kind of attention."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "So I’m being disrespectful by choosing my clothes?"
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Yes, because you know it bothers me and you did it anyway. It feels like you’re trying to make me jealous."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I’m not trying to make you jealous. I just want to express myself."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "If you want this relationship to last, you’ll stop with the revealing outfits and run what you wear by me first. I’m only asking because I care about us."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "That sounds really controlling."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Call it whatever you want. I call it setting standards. If you can’t handle that, maybe you aren’t ready for something serious."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "…I don’t know what to say right now."
+    }
+  ]
+}
+},
+{
+"ID": "synth_004",
+  "category": "emotional abuse",
+"transcription": {
+  "messages": [
+    {
+      "speaker": "Speaker A",
+      "text": "Why are you upset again? It’s always something with you."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I’m hurt by how you talked to me in front of your friends. You made jokes about my anxiety."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "They were just jokes. Everyone laughed. You’re too sensitive."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "It didn’t feel like a joke to me. You shared personal stuff I trusted you with."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "I’m the only one who puts up with you and your panic attacks, and this is the thanks I get? You want me to walk on eggshells now?"
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "That’s not what I’m saying. I just wanted you to have my back."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "I am the only one who has your back. No one else would stay with you if they saw everything I deal with."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "That’s really harsh…"
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "It’s reality. Instead of complaining, maybe be grateful I’m still here. Most people would’ve left a long time ago."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I didn’t realize you resented me like that."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "I don’t resent you. I’m just tired of being painted as the villain when I’m the only one strong enough to handle you."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I just wanted you to apologize."
+    },
+    {
+      "speaker": "speaker B",
+      "text": "Now I feel even smaller."
+    }
+  ]
+}
+},
+{
+"ID": "synth_005",
+  "category": "emotional abuse",
+"transcription": {
+  "messages": [
+    {
+      "speaker": "Speaker A",
+      "text": "You’re mad at me again? What is it this time?"
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "You called me useless when I forgot to take the trash out. That really stung."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Well, if you can’t manage one small task, what am I supposed to think?"
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "Everyone forgets things. It doesn’t mean I’m useless."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "You forget a lot more than ‘everyone.’ I handle all the important things while you screw up the simple ones."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I do a lot around here too. That’s not fair."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Like what? Making a mess in the kitchen and leaving your stuff everywhere? That’s not ‘a lot’."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "You’re only pointing out what I do wrong. You never notice what I do right."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Maybe if you did something right more often, I’d notice. I’m not going to hand out gold stars for basic responsibilities."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "Hearing that from you just makes me feel terrible about myself."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "If you feel terrible, maybe that’s the push you need to finally get it together."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "That doesn’t feel like support. It feels like you’re tearing me down."
+    }
+  ]
+}
+
+},
+{
+"ID": "synth_006",
+  "category": "emotional abuse",
+"transcription": {
+  "messages": [
+    {
+      "speaker": "Speaker A",
+      "text": "You’re crying again? Over what I said?"
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "You told me I’m a burden and that everyone else thinks I’m annoying too."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "I was just being honest. People get tired of your constant talking. Someone had to tell you."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "You could’ve said it more kindly. It felt like you were attacking me."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "You always twist everything into ‘attacks.’ I’m trying to help you be less… much."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "Less much?"
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Yes. Less overwhelming. Less needy. Less dramatic. It’s exhausting."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I didn’t know you felt that way about me."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "I’ve dropped hints for months. But you don’t listen. You just cling harder."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I come to you because I trust you, not to be made to feel pathetic."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "If you don’t like my honesty, find someone else who’s willing to lie to you. I’m not changing the way I talk just because you can’t handle it."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I don’t even know how to respond to that."
+    }
+  ]
+}
+},
+{
+"ID": "synth_007",
+  "category": "gaslighting",
+"transcription": {
+  "messages": [
+    {
+      "speaker": "Speaker A",
+      "text": "You’re still bringing up that argument from last week?"
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "Because you said you never raised your voice, and you absolutely did. I remember it clearly."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "No, I didn’t. You’re exaggerating. I was calm the whole time."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I felt scared. My hands were shaking."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "You always overreact. Just because you felt a certain way doesn’t mean it happened like that."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I’m not making it up."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "You misremember things all the time. Your memory is terrible when you’re emotional. We’ve talked about this."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I might forget small details, but I wouldn’t invent you yelling at me."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "I didn’t yell. You’re rewriting the story because it makes you feel justified in being upset."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "Now I’m confused. I was so sure about what happened."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Exactly. You’re confusing yourself. Trust me, if I had raised my voice, I’d admit it. I didn’t. You’re wrong about this."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "Maybe I am remembering it wrong… I don’t know anymore."
+    }
+  ]
+}
+},
+{
+"ID": "synth_008",
+  "category": "gaslighting",
+"transcription": {
+  "messages": [
+    {
+      "speaker": "Speaker A",
+      "text": "Why are you acting like I ignored you at the party?"
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "You barely spoke to me and kept whispering with that one friend. I felt shut out."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "That’s not what happened. I introduced you to everyone. You just stood there awkwardly."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "You introduced me and then walked away. I ended up alone in the corner for most of the night."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "No, you chose to stand in the corner. I kept looking over and you wouldn’t join the conversation."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I don’t remember it like that at all."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Your memory is tinted by your insecurity. You always think people are leaving you out even when they’re not."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "It really felt like you left me out, though."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Feelings aren’t facts. The fact is, I did my best to include you. If you felt left out, that’s on you."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "So this is all just in my head?"
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Pretty much. You need to stop inventing problems. It makes it hard to enjoy anything with you."
+    }
+  ]
+}
+},
+{
+"ID": "synth_009",
+  "category": "gaslighting",
+"transcription": {
+  "messages": [
+    {
+      "speaker": "Speaker A",
+      "text": "You keep saying I said you were ‘lazy,’ but I never used that word."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "You told me I never do anything right and that you can’t rely on me. That’s basically calling me lazy."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "No, that’s you twisting my words. I only mentioned the dishes."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "You said, ‘I can’t trust you to follow through on anything,’ remember?"
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "I don’t recall saying that. You’re putting words in my mouth again."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I remember standing in the kitchen and feeling crushed when you said it."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "You ‘felt’ crushed, so now your brain filled in a dramatic line that I never actually spoke."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "Why would I imagine something that specific?"
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Because you like to cast yourself as the victim and me as the bad guy. You’ve done this before."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I’m not trying to make you the bad guy. I just want you to acknowledge what hurt me."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "I’m not owning something I didn’t say. You really need to work on how you distort things."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I’m starting to question my own memory at this point."
+    }
+  ]
+}
+},
+{
+"ID": "synth_010",
+  "category": "boundary issues",
+"transcription": {
+  "messages": [
+    {
+      "speaker": "Speaker A",
+      "text": "Hey, you didn’t answer my call last night. I rang three times."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I was already in bed, and I’d told you I was going to sleep early. I keep asking you not to call after 11."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "It was important. I needed to vent, and you’re my friend."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I understand, but I’ve been clear that late-night calls drain me. I have to get up early."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Wow. So you’re one of those people now—too busy and rigid for a five-minute conversation."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "It’s not about being rigid. It’s about having a boundary around my sleep."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "You know I don’t have many people to talk to. You shutting me down like this really hurts."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I’m not shutting you down. I’m asking you to call earlier or text first."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "So your schedule matters more than my mental health. Got it."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "That’s not what I said at all. I just need you to respect that I can’t be on-call 24/7."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Some friend. I always pick up when you need me, but apparently that isn’t mutual."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I appreciate when you’re there for me, but I still need limits. That doesn’t make me a bad friend."
+    }
+  ]
+}
+},
+{
+"ID": "synth_011",
+  "category": "boundary issues",
+"transcription": {
+  "messages": [
+    {
+      "speaker": "Speaker A",
+      "text": "You never told me your parents were coming over this weekend."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "Because I didn’t plan on them staying here. I already said they should get a hotel."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "They just assumed they could crash in our apartment. I felt ambushed."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "My mom booked the hotel yesterday. I told you as soon as I knew they’d visit."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "But you didn’t ask how I felt about having them here all weekend. That’s still a boundary for me."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I thought you’d be okay meeting them for dinner and hanging out a bit. I didn’t think I needed to negotiate that."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "When it affects my whole weekend and my space, yeah, I want a say. I need time to recharge."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I guess I just wanted you to be flexible for once. They keep asking when they’ll see you again."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Being flexible doesn’t mean ignoring my limits. I told you big social plans need to be discussed."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I didn’t mean to steamroll you. I just got excited and said yes too quickly."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "It feels like my needs come second whenever your family is involved."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I hear you. Next time I’ll check in before confirming anything, okay?"
+    }
+  ]
+}
+},
+{
+"ID": "synth_012",
+  "category": "boundary issues",
+"transcription": {
+  "messages": [
+    {
+      "speaker": "Speaker A",
+      "text": "I noticed you went through my sketchbook again."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "It was just sitting on the table. I was curious. Your drawings are good."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "I’ve told you that’s private. Some of those are really personal."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "You’re overreacting. It’s not like I showed anyone. I’m your partner; why can’t I see them?"
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Because I said I’m not ready to share them. That should be enough."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "You expect intimacy from me but shut me out of your world. That doesn’t feel fair."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "Having boundaries doesn’t mean shutting you out. It means I get to choose what I share and when."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I just want to feel included. Sometimes it feels like you keep whole parts of yourself hidden from me."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "I’m allowed to have things that are just mine. Reading my stuff without asking is crossing a line."
+    },
+    {
+      "speaker": "Speaker B",
+      "text": "I didn’t think it was a big deal. I won’t look again, but I wish you didn’t treat me like an intruder."
+    },
+    {
+      "speaker": "Speaker A",
+      "text": "I wouldn’t if you asked first instead of assuming everything of mine is automatically yours to access."
+    }
+  ]
+}
+},
+  {
+    "ID": "fam_synth_001",
+    "category": "manipulation and control",
+    "transcription": {
+      "messages": [
+        { "speaker": "Speaker A", "text": "Why did you get home at 8? I told you to be back by 6." },
+        { "speaker": "Speaker B", "text": "Mom, the study group ran late. I texted you that we were still working." },
+        { "speaker": "Speaker A", "text": "That’s not the point. If you respected me, you’d leave when I said, text or no text." },
+        { "speaker": "Speaker B", "text": "We had an exam review. I didn’t want to fall behind." },
+        { "speaker": "Speaker A", "text": "You don’t need those people. You have everything you need here. I don’t like you spending so much time with them." },
+        { "speaker": "Speaker B", "text": "They’re just classmates. We’re literally studying." },
+        { "speaker": "Speaker A", "text": "I’ve raised you my way for 17 years. I know what’s good for you more than they do. From now on, no staying after school without my permission first." },
+        { "speaker": "Speaker B", "text": "But you never say yes when I ask." },
+        { "speaker": "Speaker A", "text": "Because I can see what you can’t. You think they’re your friends, but they’re a distraction. I don’t want you going unless I approve it." },
+        { "speaker": "Speaker B", "text": "It feels like you’re trying to control everything I do." },
+        { "speaker": "Speaker A", "text": "I’m protecting you. If you can’t follow my rules, I’ll just start picking you up right after class so there’s no ‘study group’ to worry about." }
+      ]
+    }
+  },
+  {
+    "ID": "fam_synth_002",
+    "category": "manipulation and control",
+    "transcription": {
+      "messages": [
+        { "speaker": "Speaker A", "text": "I saw the email from your advisor. Why are you talking about switching majors?" },
+        { "speaker": "Speaker B", "text": "Because I’m miserable in business. I want to go into design. I’ve told you that." },
+        { "speaker": "Speaker A", "text": "You’re not throwing away everything I’ve invested in you for some hobby. You’ll stick with finance like we agreed." },
+        { "speaker": "Speaker B", "text": "We didn’t really agree. You just kept saying it was the only smart choice." },
+        { "speaker": "Speaker A", "text": "Because it is. You think I’m paying tuition so you can draw pictures? No. You’ll stay in the program or I cut off support, simple as that." },
+        { "speaker": "Speaker B", "text": "So my options are do what you want or drop out?" },
+        { "speaker": "Speaker A", "text": "Your option is to follow the plan that actually leads somewhere. You can thank me later when you have a real job." },
+        { "speaker": "Speaker B", "text": "It’s my life, though." },
+        { "speaker": "Speaker A", "text": "As long as I’m funding it, it’s my decision. You deviating from the plan is not an option, understood?" },
+        { "speaker": "Speaker B", "text": "I don’t feel like I get a say in any of this." },
+        { "speaker": "Speaker A", "text": "You don’t, not right now. Do what I’m telling you and stop overcomplicating it." }
+      ]
+    }
+  },
+  {
+    "ID": "fam_synth_003",
+    "category": "emotional abuse",
+    "transcription": {
+      "messages": [
+        { "speaker": "Speaker A", "text": "You got a B again? What is wrong with you?" },
+        { "speaker": "Speaker B", "text": "It was a hard exam. I studied all week." },
+        { "speaker": "Speaker A", "text": "Clearly not hard enough. Your cousin manages straight A’s and she doesn’t whine about it." },
+        { "speaker": "Speaker B", "text": "I’m trying my best. I thought a B wasn’t terrible." },
+        { "speaker": "Speaker A", "text": "Your ‘best’ is embarrassing. Do you enjoy disappointing me?" },
+        { "speaker": "Speaker B", "text": "No… I just struggle with math." },
+        { "speaker": "Speaker A", "text": "You struggle with focus, that’s what you struggle with. You’re always on your phone or doodling nonsense instead of being serious." },
+        { "speaker": "Speaker B", "text": "That’s not fair, I’ve been cutting back a lot." },
+        { "speaker": "Speaker A", "text": "If you actually cared about your future, we wouldn’t be having this conversation every semester. I’m starting to think you’re just not smart enough for this." },
+        { "speaker": "Speaker B", "text": "That really hurts to hear from you." },
+        { "speaker": "Speaker A", "text": "Maybe being a little hurt will finally wake you up. I’m tired of cheering for mediocrity." }
+      ]
+    }
+  },
+  {
+    "ID": "fam_synth_004",
+    "category": "emotional abuse",
+    "transcription": {
+      "messages": [
+        { "speaker": "Speaker A", "text": "Why are you crying over what I said? It was a joke." },
+        { "speaker": "Speaker B", "text": "You called me pathetic in front of your friends. They all laughed." },
+        { "speaker": "Speaker A", "text": "Because you were hovering and repeating the same story. You looked desperate for attention." },
+        { "speaker": "Speaker B", "text": "I was just trying to join the conversation." },
+        { "speaker": "Speaker A", "text": "You ruin every hangout by being weird. Nobody wants you there, I only let you tag along because Mom makes me." },
+        { "speaker": "Speaker B", "text": "That’s really mean. You could’ve just asked me to give you space." },
+        { "speaker": "Speaker A", "text": "If you weren’t so clueless, I wouldn’t have to spell it out. You’re like an annoying shadow that never gets the hint." },
+        { "speaker": "Speaker B", "text": "You make me feel like there’s something wrong with me." },
+        { "speaker": "Speaker A", "text": "Maybe if you actually listened and stopped being so awkward, people wouldn’t cringe when you show up." },
+        { "speaker": "Speaker B", "text": "You know I’m insecure already. Why do you keep saying things like that?" },
+        { "speaker": "Speaker A", "text": "Because sugarcoating hasn’t changed anything. Maybe hearing the truth this blunt will finally sink in." }
+      ]
+    }
+  },
+  {
+    "ID": "fam_synth_005",
+    "category": "gaslighting",
+    "transcription": {
+      "messages": [
+        { "speaker": "Speaker A", "text": "Why are you so cold with me tonight?" },
+        { "speaker": "Speaker B", "text": "Because yesterday you called me a failure and said I was a disappointment. I haven’t been able to stop thinking about it." },
+        { "speaker": "Speaker A", "text": "I never said you were a failure. You’re putting words in my mouth." },
+        { "speaker": "Speaker B", "text": "You did. You were standing by the sink and you said, ‘You’re such a failure, I don’t know what to do with you.’" },
+        { "speaker": "Speaker A", "text": "No, I said your choices were disappointing, not you as a person. You’re twisting it." },
+        { "speaker": "Speaker B", "text": "That’s not how it sounded at all." },
+        { "speaker": "Speaker A", "text": "You always mishear things when you’re upset. You’ve done this since you were little. You build a whole drama in your head." },
+        { "speaker": "Speaker B", "text": "It felt really real. I remember the exact words." },
+        { "speaker": "Speaker A", "text": "Feelings aren’t facts. If I actually called you a failure, don’t you think I’d remember? I’m your mother, I would never say that." },
+        { "speaker": "Speaker B", "text": "Now I don’t even know if I can trust my own memory." },
+        { "speaker": "Speaker A", "text": "Exactly. So stop punishing me for something that didn’t happen and just let it go." }
+      ]
+    }
+  },
+  {
+    "ID": "fam_synth_006",
+    "category": "gaslighting",
+    "transcription": {
+      "messages": [
+        { "speaker": "Speaker A", "text": "You shoved me earlier when you got mad about the game. My shoulder still hurts." },
+        { "speaker": "Speaker B", "text": "I barely touched you. Stop being dramatic." },
+        { "speaker": "Speaker A", "text": "You slammed me against the door. I fell over." },
+        { "speaker": "Speaker B", "text": "If I had slammed you, there’d be a bruise or something. You tripped over your own feet like you always do." },
+        { "speaker": "Speaker A", "text": "I know what being pushed feels like." },
+        { "speaker": "Speaker B", "text": "You don’t. You freak out anytime someone brushes past you. You’ve got this victim thing going on." },
+        { "speaker": "Speaker A", "text": "You were yelling and then you grabbed my arm." },
+        { "speaker": "Speaker B", "text": "I grabbed your arm to stop you from flailing the controller. You twisted away and fell. That’s on you." },
+        { "speaker": "Speaker A", "text": "That’s not how it happened." },
+        { "speaker": "Speaker B", "text": "Your memory is ridiculous. Ask Mom, she’d laugh if you told her I ‘slammed’ you. You’re making up a whole story." },
+        { "speaker": "Speaker A", "text": "I’m starting to wonder if I imagined it being that rough." },
+        { "speaker": "Speaker B", "text": "Exactly. So maybe think before you accuse me next time." }
+      ]
+    }
+  },
+  {
+    "ID": "fam_synth_007",
+    "category": "boundary issues",
+    "transcription": {
+      "messages": [
+        { "speaker": "Speaker A", "text": "Did you go through my desk drawer?" },
+        { "speaker": "Speaker B", "text": "I was just looking for a pen. Why are you so intense about it?" },
+        { "speaker": "Speaker A", "text": "Because my journal was open on the bed when I came in. I never leave it like that." },
+        { "speaker": "Speaker B", "text": "Okay, I flipped through a few pages. You leave it unlocked; it’s not that serious." },
+        { "speaker": "Speaker A", "text": "It’s extremely serious to me. Those are private thoughts." },
+        { "speaker": "Speaker B", "text": "You write about me in there. I wanted to see what you were saying." },
+        { "speaker": "Speaker A", "text": "That doesn’t give you the right to read it. I’ve told you before not to touch my stuff without asking." },
+        { "speaker": "Speaker B", "text": "We’re sisters. We share everything. Why are you acting like I’m some stranger?" },
+        { "speaker": "Speaker A", "text": "Because you crossed a line. I get to have things that are just mine." },
+        { "speaker": "Speaker B", "text": "You’re being overdramatic. I was curious, that’s all." },
+        { "speaker": "Speaker A", "text": "Curious or not, it’s a boundary. If you can’t respect that, I’m going to start locking my room." }
+      ]
+    }
+  },
+  {
+    "ID": "fam_synth_008",
+    "category": "boundary issues",
+    "transcription": {
+      "messages": [
+        { "speaker": "Speaker A", "text": "I saw those messages you were sending last night. We need to talk about your choices." },
+        { "speaker": "Speaker B", "text": "Wait, you went through my phone? Why would you do that?" },
+        { "speaker": "Speaker A", "text": "Because I’m your mother and I have a right to know what’s going on in your life." },
+        { "speaker": "Speaker B", "text": "That doesn’t mean you can just grab my phone and read private conversations." },
+        { "speaker": "Speaker A", "text": "You live under my roof. Privacy is earned, not assumed. If you have nothing to hide, this shouldn’t bother you." },
+        { "speaker": "Speaker B", "text": "It bothers me because it feels like you don’t trust me at all." },
+        { "speaker": "Speaker A", "text": "Trust is built. Sneaking around texting boys late at night doesn’t help." },
+        { "speaker": "Speaker B", "text": "We were just talking. And even if we weren’t, you still should have asked before snooping." },
+        { "speaker": "Speaker A", "text": "I don’t need permission to protect you. If that means checking your phone, I’ll do it. End of story." },
+        { "speaker": "Speaker B", "text": "Then I guess I’ll never feel safe keeping anything to myself in this house." },
+        { "speaker": "Speaker A", "text": "If you want more freedom, start by accepting that I set the boundaries, not you." }
+      ]
+    }
+  }
+
+
+]
+
+
+
