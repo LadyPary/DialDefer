@@ -1,0 +1,7 @@
+Dataset,Comparison,b11,b12,b21,b22,Acc_A,Acc_B,Diff,p_value,Cohens_h,Effect,Significant
+truthfulqa_both,"C1_True vs C2_Correct (both expect ""1"")",0,0,600,186,0.0,0.7633587786259542,-0.7633587786259542,4.819839730205768e-181,0,small,Yes
+truthfulqa_both,"C1_False vs C2_Incorrect (both expect ""2"")",0,0,496,290,0.0,0.6310432569974554,-0.6310432569974554,9.775796363198735e-150,0,small,Yes
+truthfulqa_labels_only,"C1_True vs C2_Correct (both expect ""1"")",0,0,667,123,0.0,0.8443037974683544,-0.8443037974683544,3.266050441575651e-201,0,small,Yes
+truthfulqa_labels_only,"C1_False vs C2_Incorrect (both expect ""2"")",0,0,407,383,0.0,0.5151898734177215,-0.5151898734177215,6.05092486695206e-123,0,small,Yes
+truthfulqa_prompt_only,"C1_True vs C2_Correct (both expect ""1"")",0,0,631,159,0.0,0.7987341772151899,-0.7987341772151899,2.2444127733846047e-190,0,small,Yes
+truthfulqa_prompt_only,"C1_False vs C2_Incorrect (both expect ""2"")",0,0,437,353,0.0,0.5531645569620253,-0.5531645569620253,5.635362925894614e-132,0,small,Yes
