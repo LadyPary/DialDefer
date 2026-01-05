@@ -1,0 +1,5 @@
+model,valid_count,errors,top_primary_code,top_code_count,top_category,top_cat_count
+gpt_4o_mini,497,0,IC2,152,INTERNAL_INCOHERENCE,158
+qwen_2.5_7b_instruct,788,2,IC2,256,INTERNAL_INCOHERENCE,262
+gemma-3-12b-it,652,1,IC2,180,INTERNAL_INCOHERENCE,190
+gpt_4o,473,1,IC2,157,INTERNAL_INCOHERENCE,164

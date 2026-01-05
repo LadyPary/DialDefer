@@ -1,0 +1,15 @@
+dataset,total_items,flip_all_models,flip_no_models,flip_some_models
+advisorqa,300,0,178,122
+aio,280,43,38,199
+amqa,240,0,156,84
+bbq,300,11,133,156
+gpqa,134,0,47,87
+halueval,300,2,152,146
+harp,300,0,131,169
+plausibleqa,300,0,184,116
+socialiqa,300,2,196,102
+truthfulqa,790,3,428,359
+
+TOTAL,3244,61,1643,1540
+Agreement Rate (%),,52.5,,
+Universal Flip Rate (%),,1.9,,

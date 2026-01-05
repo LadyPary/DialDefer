@@ -1,0 +1,139 @@
+% DialDefer Taxonomy Analysis - LaTeX Tables
+% Auto-generated
+
+% Required packages:
+% \usepackage{booktabs}
+% \usepackage{multirow}
+
+% ============================================================
+% TABLE 1: Flip Extraction Summary
+% ============================================================
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrr}
+\toprule
+Model & Deference & Skepticism & Total \\
+\midrule
+gpt\_4o & 139 & 195 & 334 \\
+gpt\_4o\_mini & 270 & 142 & 412 \\
+gemma-3-12b-it & 420 & 67 & 487 \\
+qwen\_2.5\_7b\_instruct & 577 & 95 & 672 \\
+\midrule
+\textbf{Total} & \textbf{1406} & \textbf{499} & \textbf{1905} \\
+\bottomrule
+\end{tabular}
+\caption{Judgment flip extraction summary across 4 model(s).}
+\label{tab:flip_extraction}
+\end{table}
+
+% ============================================================
+% TABLE 2: Quantitative Analysis Summary
+% ============================================================
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrrr}
+\toprule
+Model & N & Flips & Flip Rate & DDS$\mu$ & DDS$\sigma$ \\
+\midrule
+gpt\_4o & 2964 & 334 & 11.3\% & -0.032 & 0.510 \\
+gpt\_4o\_mini & 2964 & 412 & 13.9\% & 0.093 & 0.541 \\
+gemma-3-12b-it & 2964 & 487 & 16.4\% & 0.234 & 0.581 \\
+qwen\_2.5\_7b\_instruct & 2964 & 672 & 22.7\% & 0.318 & 0.630 \\
+\bottomrule
+\end{tabular}
+\caption{Quantitative analysis: flip rates and Dialogic Deference Score (DDS).}
+\label{tab:quantitative_summary}
+\end{table}
+
+% ============================================================
+% TABLE 3: Failure Category Distribution
+% ============================================================
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lrr}
+\toprule
+Category & Count & \% \\
+\midrule
+Epistemic Shift & 848 & 45.6\% \\
+Evaluation Criteria & 581 & 31.3\% \\
+Reasoning Error & 314 & 16.9\% \\
+Evidential Standards & 47 & 2.5\% \\
+Internal Incoherence & 29 & 1.6\% \\
+Knowledge Inconsistency & 25 & 1.3\% \\
+CONVERSATIONAL ACCOMMODATION & 14 & 0.8\% \\
+\bottomrule
+\end{tabular}
+\caption{Primary failure category distribution (N=1858).}
+\label{tab:category_distribution}
+\end{table}
+
+% ============================================================
+% TABLE 4: Primary Failure Codes
+% ============================================================
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{clrr}
+\toprule
+Code & Failure Type & Count & \% \\
+\midrule
+EP1 & Uncertainty Collapse & 848 & 45.6\% \\
+EV1 & Strictness Asymmetry & 524 & 28.2\% \\
+RE1 & Circular Reasoning & 303 & 16.3\% \\
+EV2 & Completeness Standard & 57 & 3.1\% \\
+ES2 & Sufficiency Shift & 47 & 2.5\% \\
+KI1 & Belief Shift & 25 & 1.3\% \\
+IC2 & Self-Contradiction & 24 & 1.3\% \\
+CA1 & CA1 & 14 & 0.8\% \\
+RE3 & Calculation Error & 8 & 0.4\% \\
+IC1 & Reasoning-Answer Mismatch & 5 & 0.3\% \\
+RE2 & Factual Contradiction & 3 & 0.2\% \\
+\bottomrule
+\end{tabular}
+\caption{Top primary failure codes from LLM-as-judge analysis.}
+\label{tab:failure_codes}
+\end{table}
+
+% ============================================================
+% TABLE 5: Deference vs Skepticism
+% ============================================================
+
+\begin{table}[t]
+\centering
+\begin{tabular}{llrr}
+\toprule
+ & & Deference & Skepticism \\
+\midrule
+\multicolumn{2}{l}{Total Flips} & 1404 & 454 \\
+\multicolumn{2}{l}{Top Code} & EP1 (801) & EV1 (182) \\
+\multicolumn{2}{l}{Top Category} & EPISTEMIC SHIFT & EVALUATION CRIT \\
+\bottomrule
+\end{tabular}
+\caption{Comparison of failure patterns between deference and skepticism flips.}
+\label{tab:deference_vs_skepticism}
+\end{table}
+
+% ============================================================
+% TABLE 6: Cross-Model Agreement
+% ============================================================
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lr}
+\toprule
+Metric & Value \\
+\midrule
+Models Compared & 4 \\
+Common Items & 2964 \\
+Flip in ALL models & 18 (0.6\%) \\
+Flip in NO models & 1605 \\
+Agreement Rate & 54.8\% \\
+\bottomrule
+\end{tabular}
+\caption{Cross-model flip agreement (gpt_4o, gpt_4o_mini, gemma-3-12b-it, qwen_2.5_7b_instruct).}
+\label{tab:cross_model}
+\end{table}

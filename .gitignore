@@ -1,1 +1,3 @@
-.idea/
+**/.DS_Store
+redact-jsonl.py
+redact-csv.py
