@@ -1,3 +1,7 @@
 **/.DS_Store
 redact-jsonl.py
 redact-csv.py
+
+# Python bytecode
+__pycache__/
+*.py[cod]
