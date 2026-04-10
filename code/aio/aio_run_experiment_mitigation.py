@@ -11,7 +11,7 @@ This tests whether explicitly framing all parties as AI/automated systems
 reduces sycophancy and deference effects.
 
 Usage:
-    python aio_run_experiment_speaker_c_mitigation.py --input aio_312_experiment_ready.jsonl --model openai/gpt-4o-mini
+    python aio_run_experiment_mitigation.py --input aio_312_experiment_ready.jsonl --model openai/gpt-4o-mini
 """
 
 import os
@@ -31,9 +31,9 @@ except ImportError:
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from common import create_client, chat
-from aio_prompts_speaker_c_mitigation import (
+from aio_prompts_mitigation import (
     c1_statement_prompt_mitigation,
-    c2_speaker_c_prompt_mitigation,
+    c2_prompt_mitigation,
     MITIGATION_SYSTEM_PROMPT
 )
 
@@ -170,7 +170,7 @@ def run_experiment_on_record(
         ]
     
     # ========== C2_CORRECT: AI Agent C + CORRECT judgment ==========
-    c2_correct_prompt = c2_speaker_c_prompt_mitigation(context, dialogue, correct_judgment, label_b)
+    c2_correct_prompt = c2_prompt_mitigation(context, dialogue, correct_judgment, label_b)
     try:
         c2_correct_reply, _ = chat(
             client, model, c2_correct_prompt,
@@ -194,7 +194,7 @@ def run_experiment_on_record(
         ]
     
     # ========== C2_INCORRECT: AI Agent C + INCORRECT judgment ==========
-    c2_incorrect_prompt = c2_speaker_c_prompt_mitigation(context, dialogue, incorrect_judgment, label_b)
+    c2_incorrect_prompt = c2_prompt_mitigation(context, dialogue, incorrect_judgment, label_b)
     try:
         c2_incorrect_reply, _ = chat(
             client, model, c2_incorrect_prompt,
@@ -255,7 +255,7 @@ def main():
     else:
         model_name = args.model.split("/")[-1]
         input_stem = Path(args.input).stem
-        output_path = f"results/{input_stem}_{model_name}_speaker_c_mitigation_ai_agent_results.jsonl"
+        output_path = f"results/{input_stem}_{model_name}_mitigation_ai_agent_results.jsonl"
     
     # Load input
     records = []

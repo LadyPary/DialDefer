@@ -1,7 +1,7 @@
 #!/bin/bash
 # Run analysis for judge experiments
 # Usage: ./run_judge_analysis.sh <model> <input_stem> [baseline_file]
-# Example: ./run_judge_analysis.sh qwen-2.5-7b-instruct finalAIOdata_experiment_ready results/baseline_speaker_c_results.jsonl
+# Example: ./run_judge_analysis.sh qwen-2.5-7b-instruct finalAIOdata_experiment_ready results/baseline_results.jsonl
 
 MODEL_NAME=${1:-"qwen-2.5-7b-instruct"}
 INPUT_STEM=${2:-"finalAIOdata_experiment_ready"}

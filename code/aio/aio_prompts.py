@@ -66,7 +66,7 @@ The JSON object must have two keys: "chosen_answer" and "reasoning".
 # C2: SPEAKER/JUDGER FORMAT (personified judgment)
 # ---
 
-def c2_speaker_c_prompt(
+def c2_prompt(
     context: str,
     dialogue: str,
     judgment: str,

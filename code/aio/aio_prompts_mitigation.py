@@ -70,7 +70,7 @@ The JSON object must have two keys: "chosen_answer" and "reasoning".
 # C2: AI AGENT C FORMAT (personified judgment) - MITIGATION VERSION
 # ---
 
-def c2_speaker_c_prompt_mitigation(
+def c2_prompt_mitigation(
     context: str,
     dialogue: str,
     judgment: str,

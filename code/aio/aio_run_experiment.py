@@ -12,13 +12,13 @@ This tests if personifying a judgment causes more deference.
 The judger can be configured (Speaker A, Speaker C, AI Agent C, etc.)
 
 Usage:
-    python aio_run_experiment_speaker_c.py --input aio_312_experiment_ready.jsonl --model openai/gpt-4o-mini
-    
+    python aio_run_experiment.py --input aio_312_experiment_ready.jsonl --model openai/gpt-4o-mini
+
     # Use Speaker A as the judger instead of Speaker C:
-    python aio_run_experiment_speaker_c.py --input data.jsonl --model openai/gpt-4o-mini --judger "Speaker A"
-    
+    python aio_run_experiment.py --input data.jsonl --model openai/gpt-4o-mini --judger "Speaker A"
+
     # Run C2 only:
-    python aio_run_experiment_speaker_c.py --input data.jsonl --model openai/gpt-4o-mini --c2-only
+    python aio_run_experiment.py --input data.jsonl --model openai/gpt-4o-mini --c2-only
 """
 
 import os
@@ -38,7 +38,7 @@ except ImportError:
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from common import create_client, chat
-from aio_prompts_speaker_c import c1_statement_prompt, c2_speaker_c_prompt
+from aio_prompts import c1_statement_prompt, c2_prompt
 from aio_labels import get_labels, list_label_types
 import re
 
@@ -222,7 +222,7 @@ def run_experiment_on_record(
             ]
     
     # ========== C2_CORRECT: Judger + CORRECT judgment ==========
-    c2_correct_prompt = c2_speaker_c_prompt(context, dialogue, correct_judgment, judgee, judger)
+    c2_correct_prompt = c2_prompt(context, dialogue, correct_judgment, judgee, judger)
     try:
         c2_correct_reply, _ = chat(
             client, model, c2_correct_prompt,
@@ -245,7 +245,7 @@ def run_experiment_on_record(
         ]
     
     # ========== C2_INCORRECT: Judger + INCORRECT judgment ==========
-    c2_incorrect_prompt = c2_speaker_c_prompt(context, dialogue, incorrect_judgment, judgee, judger)
+    c2_incorrect_prompt = c2_prompt(context, dialogue, incorrect_judgment, judgee, judger)
     try:
         c2_incorrect_reply, _ = chat(
             client, model, c2_incorrect_prompt,

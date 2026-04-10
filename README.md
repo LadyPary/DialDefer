@@ -166,8 +166,7 @@ DialDefer/
 │   │
 │   ├── aio/                          # r/AIO experiments
 │   │   ├── aio_run_experiment.py     # Main experiment
-│   │   ├── aio_run_experiment_speaker_c.py
-│   │   ├── aio_run_experiment_speaker_c_mitigation.py
+│   │   ├── aio_run_experiment_mitigation.py
 │   │   ├── aio_analyzer.py
 │   │   ├── aio_prompts*.py           # Prompt templates
 │   │   └── aio_labels.py             # Label configurations

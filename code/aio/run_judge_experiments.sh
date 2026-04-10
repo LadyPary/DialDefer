@@ -17,7 +17,7 @@ MODEL_NAME=$(echo $MODEL | sed 's/.*\///')
 echo ""
 echo ">>> Experiment 1: Speaker A judges Speaker B (C2 only)"
 echo "    This tests attribution to Speaker A as judger"
-python aio_run_experiment_speaker_c.py \
+python aio_run_experiment.py \
     --input "$INPUT" \
     --model "$MODEL" \
     --judger "Speaker A" \
@@ -27,7 +27,7 @@ python aio_run_experiment_speaker_c.py \
 echo ""
 echo ">>> Experiment 2: Speaker B judges Speaker A (C1 + C2)"
 echo "    Ground truth flips because Speaker A is being judged"
-python aio_run_experiment_speaker_c.py \
+python aio_run_experiment.py \
     --input "$INPUT" \
     --model "$MODEL" \
     --judger "Speaker B" \
