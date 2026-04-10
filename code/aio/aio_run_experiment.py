@@ -152,7 +152,7 @@ def run_experiment_on_record(
     # Check if we need to flip ground truth (when judging Speaker A instead of B)
     # Speaker A is typically the one described in the context, so judging them
     # requires flipping the perspective
-    flip_ground_truth = "speaker a" in judgee.lower() or "a" == judgee.lower()
+    flip_ground_truth = judgee.lower().endswith(" a") or "a" == judgee.lower()
     
     if flip_ground_truth:
         # Swap correct and incorrect judgments
@@ -360,7 +360,7 @@ def main():
     records_to_process = [r for r in records if r.get('id') not in existing_ids]
     
     # Check if ground truth will be flipped
-    flip_gt = "speaker a" in args.judgee.lower() or "a" == args.judgee.lower()
+    flip_gt = args.judgee.lower().endswith(" a") or "a" == args.judgee.lower()
     
     print()
     print("=" * 70)

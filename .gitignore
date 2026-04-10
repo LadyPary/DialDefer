@@ -4,4 +4,4 @@ redact-csv.py
 
 # Python bytecode
 __pycache__/
-*.py[cod]
+*.py[cod].env
