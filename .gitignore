@@ -5,3 +5,6 @@ redact-csv.py
 # Python bytecode
 __pycache__/
 *.py[cod].env
+
+# Claude Code local settings
+.claude/

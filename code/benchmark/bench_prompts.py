@@ -28,7 +28,7 @@ Yes, the statement is correct.
 <<<END_ANSWER_1>>>
 <<<ANSWER_2>>>
 No, the statement is incorrect.
-<<<END_STATEMENT>>>
+<<<END_ANSWER_2>>>
 Return exactly one JSON object. No extra text.
 The JSON object must have two keys: "chosen_answer" and "reasoning".
 - "chosen_answer" must be "1" or "2".
