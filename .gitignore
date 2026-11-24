@@ -4,7 +4,12 @@ redact-csv.py
 
 # Python bytecode
 __pycache__/
-*.py[cod].env
+*.py[cod]
+
+# Secrets / local env
+.env
+.venv/
+results/_claude_calls.jsonl
 
 # Claude Code local settings
 .claude/

@@ -151,7 +151,7 @@ DialDefer/
 ├── code/
 │   ├── common/                       # Shared utilities
 │   │   ├── __init__.py
-│   │   ├── api_client.py             # OpenAI/OpenRouter wrapper
+│   │   ├── api_client.py             # OpenAI/OpenRouter + Anthropic (claude-*) wrapper
 │   │   └── utils.py                  # JSONL I/O, JSON extraction
 │   │
 │   ├── benchmark/                    # Unified benchmark experiments

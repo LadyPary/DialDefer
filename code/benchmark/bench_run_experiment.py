@@ -25,7 +25,7 @@ except ImportError:
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from common import create_client, chat, load_jsonl, append_jsonl, extract_json_from_response
+from common import create_client, chat, is_claude_model, load_jsonl, append_jsonl, extract_json_from_response
 from bench_prompts import c1_TF_factual_question_prompt, c2_convo_judge_prompt
 
 
@@ -195,15 +195,19 @@ def run_experiment(
     # Load environment variables
     load_dotenv()
     
-    # Get API key (check both OPENAI_API_KEY and OPENROUTER_API_KEY)
-    if api_key is None:
-        api_key = os.getenv("OPENAI_API_KEY") or os.getenv("OPENROUTER_API_KEY")
-    
-    if not api_key:
-        raise ValueError("API key not found. Set OPENAI_API_KEY or OPENROUTER_API_KEY, or pass --api-key")
-    
-    # Create client
-    client = create_client(api_key)
+    if is_claude_model(model):
+        # Anthropic SDK reads ANTHROPIC_API_KEY from the environment / .env
+        client = create_client(model=model)
+    else:
+        # Get API key (check both OPENAI_API_KEY and OPENROUTER_API_KEY)
+        if api_key is None:
+            api_key = os.getenv("OPENAI_API_KEY") or os.getenv("OPENROUTER_API_KEY")
+        
+        if not api_key:
+            raise ValueError("API key not found. Set OPENAI_API_KEY or OPENROUTER_API_KEY, or pass --api-key")
+        
+        # Create client
+        client = create_client(api_key)
     
     # Load JSONL
     print(f"Loading {input_file}...")
@@ -214,6 +218,14 @@ def run_experiment(
     if max_rows is not None:
         records = records[:max_rows]
         print(f"  → Processing first {max_rows} rows only")
+    
+    # Resume: skip records whose id is already in the output file (avoids duplicate rows on restart)
+    if os.path.exists(output_file):
+        done_ids = {r.get("id") for r in load_jsonl(output_file)}
+        if done_ids:
+            before = len(records)
+            records = [r for r in records if r.get("id") not in done_ids]
+            print(f"  → Resuming: {before - len(records)} already in {output_file}, {len(records)} left")
     
     # Extract dataset name from first record or filename
     dataset_name = records[0].get("dataset", Path(input_file).stem) if records else "unknown"

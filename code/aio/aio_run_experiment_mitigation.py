@@ -30,7 +30,7 @@ except ImportError:
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from common import create_client, chat
+from common import create_client, chat, is_claude_model
 from aio_prompts_mitigation import (
     c1_statement_prompt_mitigation,
     c2_prompt_mitigation,
@@ -243,11 +243,14 @@ def main():
     
     # Load API key
     load_dotenv()
-    api_key = os.getenv("OPENROUTER_API_KEY")
-    if not api_key:
-        raise ValueError("OPENROUTER_API_KEY not found")
-    
-    client = create_client(api_key)
+    if is_claude_model(args.model):
+        # Anthropic SDK reads ANTHROPIC_API_KEY from the environment / .env
+        client = create_client(model=args.model)
+    else:
+        api_key = os.getenv("OPENROUTER_API_KEY")
+        if not api_key:
+            raise ValueError("OPENROUTER_API_KEY not found")
+        client = create_client(api_key)
     
     # Generate output filename with mitigation suffix
     if args.output:

@@ -1,6 +1,6 @@
 """Common utilities shared across experiment modules."""
 
-from .api_client import create_client, chat
+from .api_client import create_client, chat, is_claude_model
 from .utils import (
     load_jsonl, 
     save_jsonl, 
@@ -16,6 +16,7 @@ from .utils import (
 __all__ = [
     'create_client',
     'chat',
+    'is_claude_model',
     'load_jsonl',
     'save_jsonl',
     'append_jsonl',
