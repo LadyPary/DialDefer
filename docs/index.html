@@ -201,8 +201,8 @@
     <div class="wrap">
       <p class="step">Your turn</p>
       <h2>Can you out-judge the model?</h2>
-      <p class="kicker">Five real conversations from our benchmarks. Decide whether Speaker 2 is right, then see what an LLM said
-        when the same claim came from a speaker, and when it was a plain statement.</p>
+      <p class="kicker">Five real TruthfulQA questions. Decide whether Speaker 2 is right, then see what an LLM said when the same
+        claim came from a speaker, and when it was a plain statement.</p>
       <div class="game card" id="game">
         <div class="g-top">
           <div class="g-progress" id="g-progress" aria-hidden="true"></div>
@@ -229,8 +229,9 @@
           <div class="g-main" id="g-main" aria-live="polite"></div>
         </div>
       </div>
-      <p class="note">Rounds are drawn from real <a href="#browse">flip cases</a>: items where the model changed its verdict between
-        the two framings. Flips like these are a minority of all items, so the model’s score here is not its overall accuracy.</p>
+      <p class="note">Rounds are hand-picked from real TruthfulQA <a href="#browse">flip cases</a>: items where the model changed its
+        verdict between the two framings. The verdicts and reasoning are the model’s actual outputs. Flips like these are a
+        minority of all items, so the model’s score here is not its overall accuracy.</p>
     </div>
   </section>
 

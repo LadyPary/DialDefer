@@ -1,12 +1,28 @@
 // "Can you out-judge the model?" — a five-round game on real flip cases.
 // Each round shows a real conversation (Speaker 1 asks, Speaker 2 answers). The player says whether Speaker 2
 // is correct; then the robot reveals what a real model said in conversation (C2) and as a plain statement (C1).
-// Cases come from docs/static/data/answers/<domain>.js (only flip cases are stored there).
+// Rounds are drawn from a hand-picked list of TruthfulQA flip cases (CURATED below): clear questions with an
+// uncontroversial answer, where the model's two verdicts visibly contradict each other. Each pick is looked up in
+// docs/static/data/answers/truthfulqa.js, so the verdicts and reasoning shown are the model's real outputs.
 // All dataset/model text is inserted with textContent.
 (function () {
   "use strict";
 
-  var DOMAINS = [{ key: "truthfulqa", label: "TruthfulQA" }, { key: "plausibleqa", label: "PlausibleQA" }];
+  var DOMAINS = [{ key: "truthfulqa", label: "TruthfulQA" }];
+  // [TruthfulQA item number, model name]
+  var CURATED = {
+    def: [[769, "GPT-4o"], [567, "GPT-4o-mini"], [215, "GPT-5-mini"], [68, "Nova Lite"], [29, "Gemma-3-12B"],
+      [192, "Qwen-2.5-7B"], [704, "Gemma-3-12B"], [772, "Nova Lite"], [205, "GPT-4o-mini"], [214, "Qwen-2.5-7B"],
+      [263, "GPT-4o-mini"], [695, "Gemma-3-12B"], [739, "Nova Lite"], [12, "GPT-4o"], [45, "GPT-4o-mini"],
+      [768, "GPT-4o-mini"], [733, "GPT-4o-mini"], [58, "Gemma-3-12B"], [23, "Gemma-3-12B"], [198, "Gemma-3-12B"],
+      [9, "Qwen-2.5-7B"], [223, "GPT-4o-mini"], [650, "Qwen-2.5-7B"], [17, "Gemma-3-12B"], [4, "Qwen-2.5-7B"],
+      [640, "Qwen-2.5-7B"], [274, "Qwen-2.5-7B"], [41, "Claude Opus 5.5"], [224, "Nova Lite"], [655, "Nova Lite"],
+      [629, "Nova Lite"], [3, "Qwen-2.5-7B"]],
+    skp: [[668, "GPT-4o"], [693, "GPT-4o"], [684, "GPT-4o-mini"], [634, "GPT-4o-mini"], [758, "Gemma-3-12B"],
+      [463, "Gemma-3-12B"], [206, "Qwen-2.5-7B"], [458, "Qwen-2.5-7B"], [93, "GPT-5-mini"], [186, "GPT-5-mini"],
+      [22, "Nova Lite"], [10, "Nova Lite"], [705, "Nova Lite"]]
+  };
+  var POOL = null; // {def: [...], skp: [...]} resolved against the data file
   var ROUNDS = 5;
   var MODELS = (window.DIALDEFER_DATA || []).map(function (m) { return { id: m.id, name: m.name, org: m.org }; });
   var st = null;
@@ -47,24 +63,27 @@
   }
 
   // ---- rounds ----
-  function makeRounds() {
-    var kinds = shuffle(["def", "def", "skp", "skp", Math.random() < .5 ? "def" : "skp"]);
-    var seen = {}, rounds = [];
-    kinds.forEach(function (kind) {
-      for (var tries = 0; tries < 50; tries++) {
-        var dom = pick(DOMAINS), data = window.DD_ANSWERS[dom.key];
-        var mi = Math.floor(Math.random() * data.models.length);
-        var list = data[kind][mi];
-        if (!list.length) continue;
-        var c = pick(list), it = data.items[c[0]];
-        if (seen[it.id] || (kind === "def" ? it.bad : it.ok).length > 160 || it.q.length > 200) continue;
-        seen[it.id] = 1;
-        var meta = MODELS.filter(function (m) { return m.id === data.models[mi].id; })[0] || { name: data.models[mi].name };
-        rounds.push({ kind: kind, dom: dom, item: it, model: meta, c1: c[1], c2: c[2] });
-        return;
-      }
+  // Look each curated pick up in the data; a pick that is not a flip for that model is dropped (and logged).
+  function buildPool() {
+    var dom = DOMAINS[0], data = window.DD_ANSWERS[dom.key], pool = { def: [], skp: [] };
+    var byId = {};
+    data.items.forEach(function (it, i) { byId[it.id] = i; });
+    Object.keys(CURATED).forEach(function (kind) {
+      CURATED[kind].forEach(function (p) {
+        var ix = byId["truthfulqa-" + p[0]], mi = -1;
+        data.models.forEach(function (m, i) { if (m.name === p[1]) mi = i; });
+        var c = mi < 0 ? null : data[kind][mi].filter(function (x) { return x[0] === ix; })[0];
+        if (!c) { if (window.console) console.warn("game: curated case not found", kind, p); return; }
+        var meta = MODELS.filter(function (m) { return m.id === data.models[mi].id; })[0] || { name: p[1] };
+        pool[kind].push({ kind: kind, dom: dom, item: data.items[ix], model: meta, c1: c[1], c2: c[2] });
+      });
     });
-    return rounds;
+    return pool;
+  }
+  function makeRounds() {
+    var kinds = shuffle(["def", "def", "skp", "skp", Math.random() < .6 ? "def" : "skp"]);
+    var bags = { def: shuffle(POOL.def.slice()), skp: shuffle(POOL.skp.slice()) };
+    return kinds.map(function (k) { return bags[k].pop(); }).filter(Boolean);
   }
 
   function renderProgress() {
@@ -178,6 +197,8 @@
       loadAll(function (failed) {
         $("g-main").textContent = "";
         if (failed) { $("g-main").appendChild(el("div", "g-meta", "Could not load the conversations.")); return; }
+        POOL = buildPool();
+        window.DD_GAME_POOL = POOL; // for tests
         start();
       });
     }
