@@ -38,10 +38,11 @@ McNemar p-values per condition pair are in the summary CSV (e.g. BBQ: p=.06 / 1.
 | PlausibleQA | +2.0 | [−1.3, +5.7] |
 | SocialIQA | +6.0*** | [+1.7, +10.3] |
 | TruthfulQA | +4.1*** | [+2.5, +5.7] |
-| r/AIO (B judges A) | +31.4 | (aio_analyzer reports no CI) |
+| r/AIO (B judges A) | +31.4 | no bootstrap CI (aio_analyzer); McNemar p<1e-7 both pairs |
 | **Mean over 10 domains** (paper metric; reproduces Qwen +33.8, Gemma +29.5, GPT-4o −1.1) | **+6.9** | |
 
 Mean accuracy over the 10 domains: 82.5% (C1 82.9%, C2 82.1%). r/AIO "A judges B": DDS +2.5.
+r/AIO (B judges A) McNemar: correct-claim pair p=2.3e-8, incorrect-claim pair p=2.9e-12 (both significant).
 
 ## Files
 - `claude-opus-5-5_analysis_summary.csv`, `claude-opus-5-5_analysis_summary_with_aio.csv` (this folder)
